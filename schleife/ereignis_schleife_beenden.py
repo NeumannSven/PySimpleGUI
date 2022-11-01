@@ -1,4 +1,4 @@
-#ereignis.py
+#ereignis_schleife_beenden.py
 import PySimpleGUI as sg
 
 sg.theme('Dark Gray 12')
@@ -15,7 +15,12 @@ layout = [[
     sg.Column(right)
 ]]
 
-event, value = sg.Window("Ereignis", layout).read()
+window = sg.Window("Ereignis Schleife Beende", layout)
 
-print(event, value)
+while True:
+    event, value = window.read()
+    if event == sg.WIN_CLOSED or event == 'Cancel':
+        break
+    print(event, value)
 
+window.close()

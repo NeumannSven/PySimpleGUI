@@ -1,4 +1,4 @@
-#ereignis.py
+#ereignis_schleife.py
 import PySimpleGUI as sg
 
 sg.theme('Dark Gray 12')
@@ -15,7 +15,8 @@ layout = [[
     sg.Column(right)
 ]]
 
-event, value = sg.Window("Ereignis", layout).read()
+window = sg.Window("Ereignis Schleife", layout)
 
-print(event, value)
-
+while True:
+    event, value = window.read()
+    print(event, value)

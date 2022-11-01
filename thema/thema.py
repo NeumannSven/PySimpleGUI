@@ -15,4 +15,4 @@ layout = [[
     sg.Column(right)
 ]]
 
-sg.Window("Komplexer", layout).read()
+sg.Window("Thema", layout).read()

@@ -3,4 +3,8 @@
 #import erste_schritte.komplex
 #import erste_schritte.komplexer
 #import thema.thema
-import schleife.ereignis
+#import schleife.ereignis
+#import schleife.ereignis_schleife
+#import schleife.ereignis_schleife_beenden
+#import menu.menu
+import editor.editor
