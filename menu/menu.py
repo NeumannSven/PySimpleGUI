@@ -3,14 +3,12 @@ import PySimpleGUI as sg
 
 sg.theme('Dark Gray 12')
 
-left = [
-    [sg.Menu([
-        ['File', ['Exit']],
-        ['Edit', ['Copy','Insert','Settings']],
-        ['View'],
-        ['Help']], k='-MENUBAR-', p=0)
-    ]
-]
+left = [[
+    sg.Menu([['File', ['Exit']], ['Edit', ['Copy', 'Insert', 'Settings']],
+             ['View'], ['Help']],
+            k='-MENUBAR-',
+            p=0)
+]]
 
 right = [[sg.Multiline(size=(80, 40))]]
 

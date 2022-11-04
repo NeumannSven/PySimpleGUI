@@ -7,10 +7,6 @@ left = [[sg.Text('Name'), sg.Input()], [sg.Text('Adresse'),
 
 right = [[sg.Multiline(size=(40, 5))]]
 
-layout = [[
-    sg.Column(left, element_justification='r'),
-    sg.VSeparator(),
-    sg.Column(right)
-]]
+layout = [[sg.Column(left, element_justification='r'), sg.Column(right)]]
 
 sg.Window("Komplexer", layout).read()

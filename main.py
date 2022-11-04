@@ -7,4 +7,5 @@
 #import schleife.ereignis_schleife
 #import schleife.ereignis_schleife_beenden
 #import menu.menu
-import editor.editor
+#import texteditor.editor
+import erste_schritte.slider

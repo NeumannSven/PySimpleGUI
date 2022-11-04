@@ -1,4 +1,35 @@
 [[package]]
+name = "numpy"
+version = "1.23.4"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "pillow"
+version = "9.3.0"
+description = "Python Imaging Library (Fork)"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-issues (>=3.0.1)", "sphinx-removed-in", "sphinxext-opengraph"]
+tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
+
+[[package]]
+name = "pyside2"
+version = "5.13.2"
+description = "Python bindings for the Qt cross-platform application and UI framework"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+shiboken2 = "5.13.2"
+
+[[package]]
 name = "pysimplegui"
 version = "4.60.4"
 description = "Python GUIs for Humans. Launched in 2018. It's 2022 & PySimpleGUI is an ACTIVE & supported project. Super-simple to create custom GUI's. 325+ Demo programs & Cookbook for rapid start. Extensive documentation. Main docs at www.PySimpleGUI.org. Fun & your success are the focus. Examples using Machine Learning (GUI, OpenCV Integration), Rainmeter Style Desktop Widgets, Matplotlib + Pyplot, PIL support, add GUI to command line scripts, PDF & Image Viewers. Great for beginners & advanced GUI programmers."
@@ -6,10 +37,90 @@ category = "main"
 optional = false
 python-versions = "*"
 
+[[package]]
+name = "pysimpleguiqt"
+version = "0.35.0"
+description = "The Alpha Qt version of PySimpleGUI, this GUI SDK Launched in 2018 Actively developed and supported. Requires pyside2 from Qt. Super-simple to create custom GUI's.  Now supports both tkinter, Qt, WxPython and Web (Remi)"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pyside2 = "*"
+
+[[package]]
+name = "pysimpleguiweb"
+version = "0.39.0"
+description = "A port of PySimpleGUI that runs in a web browser.  Utilizes Remi as the GUI framework"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+remi = "<=2020.3.10"
+
+[[package]]
+name = "pysimpleguiwx"
+version = "0.17.2"
+description = "The Engineering Pre-Release WxPython version of PySimpleGUI. PySimpleGUI SDK Launched in 2018 Actively developed and supported. Super-simple to create custom GUI's.  Now supports tkinter, Qt, WxPython, and Remi"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+WxPython = "*"
+
+[[package]]
+name = "remi"
+version = "2020.3.10"
+description = "Python REMote Interface library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "shiboken2"
+version = "5.13.2"
+description = "Python / C++ bindings helper module"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "wxpython"
+version = "4.2.0"
+description = "Cross platform GUI toolkit for Python, \"Phoenix\" version"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = {version = "*", markers = "python_version >= \"3.0\""}
+pillow = "*"
+six = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "2752b297c4c0a6b646e52952abce443da465b50565c29cabf9d34c2ab4e56ba9"
+content-hash = "ea03042764ff1f04ac8811ba9cf59ddc76e5f0c500e0dec43c574a1e5c2a5407"
 
 [metadata.files]
+numpy = []
+pillow = []
+pyside2 = []
 pysimplegui = []
+pysimpleguiqt = []
+pysimpleguiweb = []
+pysimpleguiwx = []
+remi = []
+shiboken2 = []
+six = []
+wxpython = []

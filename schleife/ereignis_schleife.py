@@ -3,8 +3,8 @@ import PySimpleGUI as sg
 
 sg.theme('Dark Gray 12')
 
-left = [[sg.Text('Name'), sg.Input()], [sg.Text('Adresse'),
-                                        sg.Input()],
+left = [[sg.Text('Name'), sg.Input()],
+        [sg.Text('Adresse'), sg.Input(key="-Address-")],
         [sg.Text('Ort'), sg.Input()], [sg.Ok(), sg.Cancel()]]
 
 right = [[sg.Multiline(size=(40, 5))]]

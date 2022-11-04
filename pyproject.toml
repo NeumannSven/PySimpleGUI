@@ -7,6 +7,8 @@ authors = ["Replit user <<>>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 PySimpleGUI = "^4.60.4"
+PySimpleGUIWeb = "^0.39.0"
+PySimpleGUIQt = "^0.35.0"
 
 [tool.poetry.dev-dependencies]
 
