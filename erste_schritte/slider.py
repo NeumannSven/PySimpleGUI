@@ -1,4 +1,4 @@
-#editor.py
+#slider.py
 import PySimpleGUI as sg
 
 #sg.theme('Dark Gray 12')
